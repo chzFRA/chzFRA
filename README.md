@@ -8,14 +8,14 @@ I’m interested in how AI systems find evidence, use tools, and recover when so
 
 | Project | What to explore | Status |
 | --- | --- | --- |
-| [AgentTrace Lab](https://github.com/chzFRA/agent-trace-lab) | Trace real Python tool calls, inspect local HTML reports, and compare runs for extra calls or errors | v0.2 · sync/async tracing · offline demo |
+| [AgentTrace Lab](https://github.com/chzFRA/agent-trace-lab) | Trace Python tools, catch call/error regressions, and diagnose MCP tool failures | v0.3 · real MCP example · reproducible checks |
 | [Real Estate Legal QA](https://github.com/chzFRA/real-estate-qa-clean) | New Zealand legal PDF processing, question generation, and retrieval experiments | Research prototype · reproducibility improvements needed |
 
-AgentTrace Lab records tool timing, exceptions, and nested calls without requiring a model key. Its checks evaluate recorded execution behavior; they do not measure answer quality or stop tools while they run. [Start with the demo](https://github.com/chzFRA/agent-trace-lab#try-it) or follow the [中文学习路线](https://github.com/chzFRA/agent-trace-lab/blob/main/docs/LEARNING_PATH.zh-CN.md).
+AgentTrace Lab records tool timing, exceptions, and nested calls without requiring a model key. Its real MCP example demonstrates a subtle failure: a request can return normally while the tool reports an error. Its checks evaluate recorded execution behavior; they do not measure answer quality or stop tools while they run. [中文上手教程](https://github.com/chzFRA/agent-trace-lab/blob/main/docs/QUICKSTART.zh-CN.md) · [Validation evidence](https://github.com/chzFRA/agent-trace-lab/blob/main/docs/VALIDATION.md) · [Learning path](https://github.com/chzFRA/agent-trace-lab/blob/main/docs/LEARNING_PATH.zh-CN.md).
 
 ## Learning from the community
 
-These are upstream projects I’m learning from, maintained by their respective communities. The learning path connects each one to a concrete exercise; framework integrations are future work.
+These are upstream projects I’m learning from, maintained by their respective communities. The learning path connects each one to a concrete exercise. A local MCP client/server example is implemented; the other framework integrations remain future work.
 
 | Upstream project | Learning focus |
 | --- | --- |
