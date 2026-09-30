@@ -2,14 +2,27 @@
 
 Exploring **reliable AI agents**, **document intelligence**, and **multimodal systems**.
 
-I’m interested in how AI systems find evidence, use tools, and recover when something goes wrong. This profile brings together my document QA work and small, reproducible engineering experiments.
+I’m interested in how AI systems find evidence, use tools, and recover when something goes wrong. I’m building small tools and reproducible experiments that help me understand those systems and give others something useful to inspect and try.
 
 ## Selected projects
 
 | Project | What to explore | Status |
 | --- | --- | --- |
-| [AgentTrace Lab](https://github.com/chzFRA/agent-trace-lab) | Tool-call validation, bounded retries, failure injection, and inspectable execution traces | Runnable engineering demo · scripted baseline |
+| [AgentTrace Lab](https://github.com/chzFRA/agent-trace-lab) | Trace real Python tool calls, inspect local HTML reports, and compare runs for extra calls or errors | v0.2 · sync/async tracing · offline demo |
 | [Real Estate Legal QA](https://github.com/chzFRA/real-estate-qa-clean) | New Zealand legal PDF processing, question generation, and retrieval experiments | Research prototype · reproducibility improvements needed |
+
+AgentTrace Lab records tool timing, exceptions, and nested calls without requiring a model key. Its checks evaluate recorded execution behavior; they do not measure answer quality or stop tools while they run. [Start with the demo](https://github.com/chzFRA/agent-trace-lab#try-it) or follow the [中文学习路线](https://github.com/chzFRA/agent-trace-lab/blob/main/docs/LEARNING_PATH.zh-CN.md).
+
+## Learning from the community
+
+These are upstream projects I’m learning from, maintained by their respective communities. The learning path connects each one to a concrete exercise; framework integrations are future work.
+
+| Upstream project | Learning focus |
+| --- | --- |
+| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Agent loops, tool calls, and trace events |
+| [LangGraph](https://github.com/langchain-ai/langgraph) | State, checkpoints, and recovery after interruption |
+| [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) | Standard tool interfaces and local client/server integration |
+| [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) | Evaluation datasets, scoring, and inspectable experiment logs |
 
 ## What I'm exploring
 
@@ -21,4 +34,4 @@ The multimodal work is a direction for future development. Project READMEs disti
 
 ---
 
-你好，我是 Huazhe Cheng。目前关注 Agent 可靠性、文档问答与多模态理解，希望把项目做成可以运行、检查证据、复现实验的作品。欢迎通过项目 Issues 交流。
+你好，我是 Huazhe Cheng。目前围绕 Agent 可靠性积累可运行、可检查、可复现的小型作品。AgentTrace Lab 用来记录真实 Python 工具调用、查看报告和比较修改前后的运行；我也在学习上面的四个社区项目，并把学习拆成具体实验。文档问答项目仍是研究原型，多模态是后续方向。欢迎通过项目 Issues 交流可复现的问题和使用反馈。
