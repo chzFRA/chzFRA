@@ -1,17 +1,21 @@
 # Hi, I'm Huazhe Cheng
 
-Exploring **reliable AI agents**, **document intelligence**, and **multimodal systems**.
+Building practical tools for **everyday work with AI**, while exploring **agent reliability** and **document intelligence**.
 
-I’m interested in how AI systems find evidence, use tools, and recover when something goes wrong. I’m building small tools and reproducible experiments that help me understand those systems and give others something useful to inspect and try.
+I’m interested in making AI work easier to organize, inspect, and reuse. My projects focus on a clear task, a runnable example, and honest limits. The browser tools below process selected files locally, without an account or model API key.
 
 ## Selected projects
 
 | Project | What to explore | Status |
 | --- | --- | --- |
+| [ChatShelf · 对话书架](https://github.com/chzFRA/chat-shelf) | Search known AI chat exports, inspect conversation branches, and save Markdown notes | [Try in your browser](https://chzfra.github.io/chat-shelf/) · v0.1 |
+| [Doc to Context · 文档备料台](https://github.com/chzFRA/doc-to-context) | Turn PDF/text into size-bounded material packets with page references for your AI | [Try in your browser](https://chzfra.github.io/doc-to-context/) · v0.1 |
 | [AgentTrace Lab](https://github.com/chzFRA/agent-trace-lab) | Trace Python tools, catch call/error regressions, and diagnose MCP tool failures | v0.3 · real MCP example · reproducible checks |
 | [Real Estate Legal QA](https://github.com/chzFRA/real-estate-qa-clean) | New Zealand legal PDF processing, question generation, and retrieval experiments | Research prototype · reproducibility improvements needed |
 
-AgentTrace Lab records tool timing, exceptions, and nested calls without requiring a model key. Its real MCP example demonstrates a subtle failure: a request can return normally while the tool reports an error. Its checks evaluate recorded execution behavior; they do not measure answer quality or stop tools while they run. [中文上手教程](https://github.com/chzFRA/agent-trace-lab/blob/main/docs/QUICKSTART.zh-CN.md) · [Validation evidence](https://github.com/chzFRA/agent-trace-lab/blob/main/docs/VALIDATION.md) · [Learning path](https://github.com/chzFRA/agent-trace-lab/blob/main/docs/LEARNING_PATH.zh-CN.md).
+Start with a browser tool and its built-in example. ChatShelf organizes existing text; Doc to Context prepares materials for the AI you already use. Neither tool generates model answers. Their READMEs explain supported inputs and what is tested.
+
+For developers, AgentTrace Lab records tool timing, exceptions, and nested calls. Its real MCP example demonstrates a request that returns normally while the tool reports an error. [中文上手教程](https://github.com/chzFRA/agent-trace-lab/blob/main/docs/QUICKSTART.zh-CN.md) · [Validation evidence](https://github.com/chzFRA/agent-trace-lab/blob/main/docs/VALIDATION.md) · [Learning path](https://github.com/chzFRA/agent-trace-lab/blob/main/docs/LEARNING_PATH.zh-CN.md).
 
 ## Learning from the community
 
@@ -34,4 +38,4 @@ The multimodal work is a direction for future development. Project READMEs disti
 
 ---
 
-你好，我是 Huazhe Cheng。目前围绕 Agent 可靠性积累可运行、可检查、可复现的小型作品。AgentTrace Lab 用来记录真实 Python 工具调用、查看报告和比较修改前后的运行；我也在学习上面的四个社区项目，并把学习拆成具体实验。文档问答项目仍是研究原型，多模态是后续方向。欢迎通过项目 Issues 交流可复现的问题和使用反馈。
+你好，我是 Huazhe Cheng。我在做普通人也能直接使用的 AI 配套工具：用「对话书架」找回并整理聊天记录，用「文档备料台」准备带来源的文档材料；同时用 AgentTrace Lab 学习工具执行与可靠性。文档问答项目仍是研究原型，多模态是后续方向。欢迎通过项目 Issues 告诉我具体使用问题和改进建议，请使用虚构或脱敏样例。
