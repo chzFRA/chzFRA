@@ -1,6 +1,6 @@
-# Hi, I'm Huazhe 👋
+# Hi, I'm Huazhe
 
-在学 AI，也在做些日常能用的小工具。
+life is fantastic
 
 ## 最近做的
 
